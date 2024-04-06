@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6646e531.css",
+    "main.js": "/static/js/main.b03c2a6c.js",
+    "static/js/592.6d7de513.chunk.js": "/static/js/592.6d7de513.chunk.js",
+    "static/media/selfie cartoon.png": "/static/media/selfie cartoon.30642028e85dd62cf2bd.png",
+    "static/media/my-CV.pdf": "/static/media/my-CV.9b7b6e6d9c90bbdfb420.pdf",
+    "static/media/vscode-logo.png": "/static/media/vscode-logo.9bc6e588b5f2b867a8a4.png",
+    "static/media/redux-logo.png": "/static/media/redux-logo.fe04b64339963c72ea05.png",
+    "static/media/Drum Machine.png": "/static/media/Drum Machine.3bd115c451ac3a47f4d3.png",
+    "static/media/css-logo.png": "/static/media/css-logo.19c8605d6b2861f5fbe0.png",
+    "static/media/PomodoroClock.png": "/static/media/PomodoroClock.cb2e6d0f8df6b4e09ed9.png",
+    "static/media/bootstrap-logo.png": "/static/media/bootstrap-logo.02e16df6861464872846.png",
+    "static/media/Calculator.png": "/static/media/Calculator.d9e5ce8f7dc62d70ef31.png",
+    "static/media/aws-logo.png": "/static/media/aws-logo.c49e0e77964d59d77b2a.png",
+    "static/media/randomQGen.png": "/static/media/randomQGen.da6edd417e9923a37569.png",
+    "static/media/JavaScript-logo.png": "/static/media/JavaScript-logo.962f06fd9db80f9f38ce.png",
+    "static/media/node-logo.png": "/static/media/node-logo.e71346fe0fec16ec5f6e.png",
+    "static/media/c-logo.png": "/static/media/c-logo.83dfa097dfa94f707a41.png",
+    "static/media/MSLogo.png": "/static/media/MSLogo.a636f2584075598c5189.png",
+    "static/media/jquery-logo.png": "/static/media/jquery-logo.0ce0c046113a3f4a73bc.png",
+    "static/media/Sass_logo.png": "/static/media/Sass_logo.de36dd5e58b1723400f2.png",
+    "index.html": "/index.html",
+    "main.6646e531.css.map": "/static/css/main.6646e531.css.map",
+    "main.b03c2a6c.js.map": "/static/js/main.b03c2a6c.js.map",
+    "592.6d7de513.chunk.js.map": "/static/js/592.6d7de513.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6646e531.css",
+    "static/js/main.b03c2a6c.js"
+  ]
+}
