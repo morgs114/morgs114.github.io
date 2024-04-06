@@ -1,0 +1,705 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    background-color: ivory;
+    min-height: 100vh; 
+    margin: 0; 
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  /* Mobile responsiveness @media rules*/
+
+  @media (min-width: 300px) {
+    #my_logo {
+      top: 0.5rem;
+      left: 0.5rem;
+    }
+    #my_logo h3 {
+      font-size: 1.5rem;
+    }
+    #my_logo img {
+      height: 40px;
+      width: 40px;
+      margin-right: 1px;
+    }
+    .hamburger {
+      width: 32px;
+      height: 32px;
+      top: 0.5rem;
+      right: 0.5rem;
+      padding: 0;
+    }
+    .hamburger i {
+      font-size: 1.6rem;
+    }
+    .menuItem {
+      font-size: 1.3rem;
+      margin-top: 3.5rem;
+    }
+    .menuItem i {
+      margin-left: 0.5rem;
+      margin-right: 0.7rem;
+    }
+    .menu {
+      width: 45%;
+    }
+    #introduction {
+      margin: 0 auto;
+      width: 85vw;
+    }
+    #intro-image {
+      margin-top: 15px;
+      width: 230px;
+    }
+    #intro-text h1 {
+      font-size: 40px;
+    }
+    #intro-text h2 {
+      font-size: 30px;
+    }
+    #intro-text p {
+      font-size: 13px;
+    }
+    #intro-image {
+      width: 200px;
+    }
+    #aboutMe {
+      width: 80vw;
+      margin : 0 auto;
+      margin-top: 180px;
+    }
+    #aboutMe h2 {
+      margin-bottom: 10px;
+      font-size: 35px;
+    }
+    #aboutMe h3 {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-size: 25px;
+    }
+    #aboutMe p {
+      font-size: 14px;
+    }
+    #skills {
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 120px;
+    }
+    #skills ul {
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    #skills ul li {
+      margin-bottom: 10px;
+    }
+    #skills ul span {
+      font-size: 0.9rem;
+    }
+    #skills ul li i {
+      font-size: 1rem;
+      margin-right: 7px;
+    }
+    #skills_container { 
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 50px;
+      width: 80%;
+    }
+    #projects {
+      margin : 0 auto;
+      margin-top: 180px;
+    }
+    #projects_container { 
+      grid-template-columns: auto;
+    }
+    .project_child {
+      width: 80vw;
+      height: auto;
+    }
+    .project {
+      overflow-y: hidden;
+      height: auto;
+    }
+    .project_child legend {
+      font-size: 13px;
+    }
+    .view_project {
+      margin-right: 3px;
+      height: 30px;
+      width: 50px;
+      font-size: 0.8rem;
+    }
+    #footer {
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+    #contact {
+      margin-left: 5px;
+    }
+    #contact i {
+      font-size: 2rem;
+    }
+    .fa-linkedin {
+      font-size: 1.6rem !important;
+      overflow-y: hidden;
+    }
+    #copyright {
+      font-size: 0.8rem;
+    }
+    #footer button {
+      margin-right: 7px;
+      margin-bottom: 10px;
+      font-size: 0.7rem;
+    }
+    #footer button i {
+      margin-left: 2px;
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (min-width: 700px) {
+    #my_logo {
+      font-size: 1.3rem;
+      top: 1rem;
+      left: 1rem;
+    }
+    #my_logo img {
+      height: 40px;
+      width: 40px;
+      margin-right: 10px;
+    }
+    .hamburger {
+      width: 40px;
+      height: 40px;
+      top: 1rem;
+      right: 1rem;
+      padding: 3px;
+    }
+    .hamburger i {
+      font-size: 2rem;
+    }
+    .menuItem {
+      font-size: 1.6rem;
+      margin-left: 2rem;
+      margin-top: 3rem;
+    }
+    .menuItem i {
+      margin-left: 1rem;
+      margin-right: 1.4rem;
+    }
+    .menu {
+      width: 20%;
+    }
+    #intro-text h1 {
+      font-size: 60px;
+    }
+    #intro-text h2 {
+      font-size: 50px;
+    }
+    #intro-text p {
+      font-size: 16px;
+    }
+    #intro-image {
+      width: 330px;
+    }
+    #aboutMe {
+      width: 70vw;
+      margin : 0 auto;
+      margin-top: 270px;
+    }
+    #aboutMe h2 {
+      margin-bottom: 20px;
+      font-size: 40px;
+    }
+    #aboutMe h3 {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-size: 25px;
+    }
+    #aboutMe p {
+      font-size: 16px;
+    }
+    #skills {
+      width: 80vw;
+      margin: 0 auto;
+      margin-top: 220px;
+    }
+    #skills_intro {
+      width: auto;
+    }
+    #skills ul span {
+      font-size: 1rem;
+    }
+    #skills_container {
+      grid-template-columns: repeat(3, 1fr);
+      margin-left: 20px;
+      width: 50%;
+    }
+    #projects {
+      margin-top: 200px;
+    }
+    #projects_container { 
+      grid-template-columns: repeat(4, 1fr); 
+    }
+    .project_child {
+      width: 270px; 
+      height: 410px;
+    }
+    .project {
+      height: 190px;
+    }
+    .project_child legend {
+      font-size: 14px;
+    }
+    .view_project {
+      height: 25px;
+      width: 50px;
+      font-size: 0.75rem;
+    }
+    #footer {
+      margin-top: 100px;
+      font-size: 1.1rem;
+    }
+    #contact {
+      margin-left: 10px;
+    }
+    #contact i {
+      font-size: 2.2rem;
+    }
+    .fa-linkedin {
+      font-size: 1.8rem !important;
+    }
+    #copyright {
+      font-size: 0.9rem;
+    }
+    #footer button {
+      font-size: 0.8rem;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    #footer button i {
+      margin-left: 1px;
+    }
+  }
+
+  /* Styling of logo in top-left of screen */
+
+  #my_logo {
+    z-index: 99;
+    position: fixed;
+    font-size: 1.5rem;
+    vertical-align: middle;
+  }
+
+  #my_logo a {
+    color: black;
+  }
+
+  #my_logo h3 {
+    display: inline-block;
+  }
+
+  #my_logo img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  /* Hamburger menu in top-right of screen */
+
+  .hamburger {
+    position: fixed;
+    padding: 2px;
+    z-index: 100;
+    border: none;
+    background-color:transparent;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .closeIcon {
+    display: none;
+    border-radius: 3px;
+    border: 1px solid white;
+    color: white;
+  }
+  
+  .menu {
+    position: fixed;
+    box-shadow: -1px 0px 2px 1px black;
+    transition: transform 0.2s;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    padding-top: 4rem;
+    list-style: none; 
+    background: #191919;
+    text-align: right;
+  }
+
+  .menuItem {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    text-decoration: none;
+    text-align: right;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .menuItem:hover {
+    text-decoration: underline;
+  }
+  
+  .menuItem i {
+    font-size: 1.7rem;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #small_icon {
+    font-size: 1.3rem;
+    overflow-y: hidden;
+  }
+
+  /* Intro text and cartoon image of myself */
+
+  #introduction {
+    z-index: 97;
+    margin-top: 150px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+  }
+
+  #introduction h1 {
+    margin-bottom: 30px;
+  }
+  
+  #softdev {
+    color: #4c5692;
+    text-shadow: 0.5px 0.5px black;
+  }
+
+  #intro-image {
+    height: auto;
+    border-radius: 11px;
+    opacity: 0.95;
+  }
+
+  /* About me section */
+
+  #aboutMe {
+    text-align: center;
+    vertical-align: center;
+  }
+
+  #aboutMe a {
+    color: #4c5692;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  #aboutMe h3 {
+    color: #4c5692;
+    text-shadow: 0.5px 0.5px black;
+  }
+
+  /* Paragraph text and legends (unless overwritten) */
+  
+  p, legend {
+    font-family: 'Libre Franklin', sans-serif;
+    line-height: calc(1ex / 0.32);
+  }
+  
+  /* Skills section: certificates, CV and grid of logos */
+
+  #skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+  }
+
+  #skills h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+
+  #skills_intro {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .CVClick {
+    display: flex;
+    margin: 0 auto;
+    vertical-align: center;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid lightgrey;
+    background-color: white;
+    border-radius: 3px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+
+  .CVClick span {
+    margin-left: 5px;
+  }
+
+  .CVClick i {
+    font-size: 1.45rem;
+  }
+
+  .CVClick:hover {
+    transform: scale(0.95);
+  }
+
+  .CVClick:active {
+    transform: scale(0.95);
+  }
+
+  #certTitle {
+    font-family: 'Playfair Display', serif;
+    color:#4c5692;
+    font-size: 21px;
+    text-shadow: 0.5px 0.5px black;
+    margin-bottom: 10px;
+  }
+
+  #skills ul {
+    list-style-type: none;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 17px;
+    text-align: left;
+  }
+
+  #skills ul a {
+    color: black;
+    display: inline-block;
+  }
+
+  #skills ul a:hover {
+    transform: scale(0.95);
+  }
+
+  #skills ul a:active {
+    transform: scale(0.95);
+  }
+
+  #skills ul li {
+    margin-top: 10px;
+    vertical-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  #skills ul li i {
+    background-color: white;
+    padding: 5px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    overflow-y: hidden;
+  }
+  
+  #skills h2 {
+    margin-bottom: 30px;
+  }
+  
+  #skills a {
+    text-decoration: none;
+  }
+  
+  #skills_container {
+    display: grid;
+    gap: 2rem;
+    justify-items: center;
+    padding-bottom: 10px;
+  }
+
+  .skill_child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 3px 3px 10px #DAC0A7;
+    background-color: white;
+    border-radius: 3px;
+    height: auto;
+    width: 100px;
+    font-weight: 600;
+  }
+
+  .skill_child img {
+    padding: 10px;
+    padding-bottom: 0;
+    object-fit: cover;
+    margin: 0 auto;
+    height: auto;
+    width: 80%;
+    max-width: 100%;
+  }
+
+  .skill_leg {
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 5px;
+    font-size: 0.95rem;
+    overflow-y: hidden;
+    width: 100%;
+    padding: 5px;
+  }
+
+  /* Project section with grid display, screenshots, legends and buttons */
+
+  #projects {
+    width: 95vw;
+    text-align: center;
+  }
+
+  #projects h2 {
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+  
+  #projects_container {
+    display: grid;
+    justify-items: center;
+  }
+
+  .project_child {
+    padding: 10px;
+  }
+  
+  .project {
+    box-shadow: 3px 3px 10px #DAC0A7;
+    border-radius: 5px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 17px;
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 0;
+    line-height: 0;
+  }
+
+  .projectScreenshot {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .projectScreenshot:hover {
+    cursor: pointer;
+  }
+  
+  .project_child legend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+  }
+
+  #coming_soon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    color: grey;
+  }
+
+  #coming_soon:hover, .disabled:hover {
+    transform: scale(1);
+  }
+
+  .view_project {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .view_project:hover {
+    transform: scale(0.95);
+  }
+
+  .view_project:active {
+    transform: scale(0.95);
+  }
+
+  .disabled {
+    cursor: not-allowed;
+    background-color: lightgrey;
+    color: grey;
+    border: 1px solid darkgrey;
+  }
+
+  /* Page footer with contact icons, copyright and CV download */
+  
+  #footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Libre Franklin', sans-serif;
+    align-items:flex-end;
+  }
+
+  #contact {
+    margin-bottom: 5px;
+  }
+
+  #contact:active {
+    transform: scale(0.9);
+  }
+
+  #contact i {
+    vertical-align: middle;
+    color: black;
+  }
+
+  .fa-linkedin {
+    margin-left: 10px;
+  }
+
+  #contact i:hover{
+    transform:scale(0.9);
+  }
+
+  #copyright {
+    margin-bottom: 10px;
+  }
+
+  #footer a {
+    text-decoration: none;
+  }
+  
+  button {
+    color: black;
+  }
+  
+  
+  
+  
+  
