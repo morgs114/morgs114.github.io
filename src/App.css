@@ -4,7 +4,6 @@
     padding: 0;
     scroll-behavior: smooth;
     max-width: 100%;
-    overflow-x: hidden;
   }
   
   body {
@@ -404,13 +403,27 @@
 
   #aboutMe {
     text-align: center;
-    vertical-align: center;
   }
 
-  #aboutMe a {
+  .about_links {
+    text-decoration: none;
     color: #4c5692;
   }
-  
+
+  .about_links:hover {
+    text-decoration: underline;
+  }
+
+  #aboutMe > ul {
+    font-family: 'Libre Franklin', sans-serif;
+    line-height: calc(1ex / 0.32);
+    list-style-position: inside; 
+  }
+
+  #aboutMe > li {
+    display: list-item;
+  }
+
   h1, h2, h3 {
     font-family: 'Playfair Display', serif;
   }
@@ -547,6 +560,10 @@
     height: auto;
     width: 100px;
     font-weight: 600;
+  }
+
+  #djangoLogo {
+    padding-top: 20px;
   }
 
   .skill_child img {

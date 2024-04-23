@@ -3,13 +3,11 @@ import cssLogo from './css-logo.png';
 import jsLogo from './JavaScript-logo.png';
 import reactLogo from './react-logo.png';
 import bstrLogo from './bootstrap-logo.png';
-import jQLogo from './jquery-logo.png';
-import reduxLogo from './redux-logo.png';
-import sassLogo from './Sass_logo.png';
-import nodeLogo from './node-logo.png';
-import cLogo from './c-logo.png';
 import vscLogo from './vscode-logo.png';
-import awsLogo from './aws-logo.png';
+import gitLogo from './git-logo.png';
+import djLogo from './django-logo.png';
+import pyLogo from './python-logo.png';
+
 import myCV from './my-CV.pdf';
 
 function Skills() {
@@ -31,10 +29,10 @@ function Skills() {
                 <div className="skill_child"><img src={jsLogo} alt="JavaScript Logo"/><legend className="skill_leg">JavaScript</legend></div>
                 <div className="skill_child"><img src={reactLogo} alt="React Logo"/><legend className="skill_leg">React</legend></div>
                 <div className="skill_child"><img src={bstrLogo} alt="Bootstrap Logo"/><legend className="skill_leg">Bootstrap</legend></div>
-                <div className="skill_child"><img src={sassLogo} alt="Sass Logo"/><legend className="skill_leg">Sass</legend></div>
-                <div className="skill_child"><img src={cLogo} alt="C Logo"/><legend className="skill_leg">C</legend></div>
+                <div className="skill_child"><img src={pyLogo} alt="Python Logo"/><legend className="skill_leg">Python</legend></div>
+                <div className="skill_child" id="djangoLogo"><img src={djLogo} alt="Django Logo"/><legend className="skill_leg">Django</legend></div>
                 <div className="skill_child"><img src={vscLogo} alt="Visual Studio Code Logo"/><legend className="skill_leg">VSCode</legend></div>
-                <div className="skill_child" id="aws_skill"><img src={awsLogo} alt="Amazon Web Services Logo"/><legend className="skill_leg">Amazon Web Services</legend></div>
+                <div className="skill_child"><img src={gitLogo} alt="Git Logo"/><legend className="skill_leg">Git</legend></div>
             </div>
         </div>
     )
